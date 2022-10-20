@@ -1,0 +1,49 @@
+.checkbox {
+    display: flex;
+    cursor: pointer;
+}
+
+.checkboxControl {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+    &:checked + .checkboxBox {
+        color: rgba(255, 255, 255, 1);
+        background-color: #25315b;
+        border-color: #25315b;
+    }
+}
+
+.checkboxBox {
+    flex: none;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(158, 158, 158, 0.25);
+    border: 1px solid rgba(153, 153, 153, 0.5);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: 100ms;
+}
+
+.checkboxLabel {
+    flex: 1;
+    margin-left: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: 20px;
+    user-select: none;
+}

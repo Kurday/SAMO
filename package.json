@@ -1,0 +1,85 @@
+{
+    "name": "samo-test",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "axios": "^0.21.1",
+        "bootstrap": "^5.0.1",
+        "chart.js": "^3.4.1",
+        "classnames": "^2.3.1",
+        "constate": "^3.3.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.2",
+        "js-cookie": "^2.2.1",
+        "luxon": "^2.3.0",
+        "node-sass": "^5.0.0",
+        "rc-slider": "^9.7.5",
+        "react": "^17.0.2",
+        "react-bootstrap": "^1.6.1",
+        "react-chartjs-2": "^3.0.3",
+        "react-circular-progressbar": "^2.0.4",
+        "react-dom": "^17.0.2",
+        "react-error-boundary": "^3.1.4",
+        "react-query": "^3.34.12",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.3",
+        "react-time-picker": "^4.4.1",
+        "sweetalert2": "^11.1.9",
+        "web-vitals": "^1.0.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build && compress-cra",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "precommit": "lint-staged --relative"
+    },
+    "lint-staged": {
+        "*.{js,jsx}": [
+            "prettier --write",
+            "eslint"
+        ],
+        "*.{scss,css}": [
+            "prettier --write"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "stylelint": {
+        "extends": [
+            "stylelint-prettier/recommended"
+        ]
+    },
+    "devDependencies": {
+        "@types/js-cookie": "^2.2.1",
+        "@types/luxon": "^2.0.9",
+        "@types/react": "^17.0.38",
+        "@types/react-dom": "^17.0.11",
+        "@types/react-router-dom": "^5.3.3",
+        "@typescript-eslint/parser": "^5.10.0",
+        "compress-create-react-app": "^1.2.1",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "husky": "^7.0.0",
+        "lint-staged": "^12.1.3",
+        "prettier": "^2.5.1",
+        "stylelint": "^14.2.0",
+        "stylelint-config-prettier": "^9.0.3",
+        "stylelint-prettier": "^2.0.0",
+        "typescript": "^4.5.4",
+        "typescript-plugin-css-modules": "^3.4.0"
+    }
+}

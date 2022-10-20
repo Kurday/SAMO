@@ -1,0 +1,22 @@
+{
+    "extends": ["react-app", "plugin:prettier/recommended"],
+    "rules": {
+        "no-unused-vars": [
+            "warn",
+            {
+                "vars": "all",
+                "args": "after-used",
+                "ignoreRestSiblings": false
+            }
+        ],
+        "jsx-quotes": [1, "prefer-double"],
+        "no-console": "warn",
+        "eqeqeq": "error",
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ]
+    }
+}

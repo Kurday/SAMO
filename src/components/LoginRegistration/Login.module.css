@@ -1,0 +1,85 @@
+.header__login {
+    height: 93vh;
+}
+
+.header {
+    background-image: url('../../assets/img/bg/background.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 54px;
+    text-align: center;
+}
+
+.loginPage form {
+    width: 410px;
+    margin: 0 auto;
+}
+
+.loginPage h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222123;
+    margin: 0px 0px 9px 0px;
+}
+
+.loginPage b {
+    font-size: 14px;
+    font-weight: 400;
+    color: #222123;
+}
+
+.container {
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 43px;
+    padding-top: 15px;
+}
+
+.loginPage input[type='text'],
+.loginPage input[type='password'] {
+    width: 100%;
+    padding: 20px;
+    margin: 8px 0 16px 0;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid #acb5bd;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
+}
+
+.loginPage input[type='text']:focus,
+.loginPage input[type='password']:focus {
+    border-color: #fe6d6d;
+    outline: none;
+}
+
+.loginPage hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background: #3c64b1;
+    border-radius: 8px;
+    color: white;
+    padding: 18px 20px;
+    margin: 28px 0 16px 0px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 410px;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+.loginPage a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.registrationButton {
+    color: dodgerblue;
+}

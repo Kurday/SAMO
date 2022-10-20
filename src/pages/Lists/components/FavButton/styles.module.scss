@@ -1,0 +1,13 @@
+.root {
+    display: inline-flex;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: auto;
+}

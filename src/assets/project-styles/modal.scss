@@ -1,0 +1,54 @@
+@import 'assets/project-styles/mixin.scss';
+@include scrollbarMedium('.modal_window');
+
+.modal_window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: calc(100vw - 70vw);
+    min-width: calc(100vw - 70vw);
+    max-height: calc(100vh - 300px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.modal {
+    & li {
+        display: flex;
+        justify-content: space-between;
+    }
+    & .add-task {
+        margin: 20px 0 20px 0;
+        display: flex;
+        justify-content: space-between;
+        & input {
+            font-size: 16px;
+            width: 500px;
+        }
+    }
+    & input[type='text'] {
+        padding: 5px;
+        width: 90%;
+    }
+    & img {
+        padding: 0 10px;
+        float: right;
+    }
+}
+
+.modal-wrap .checkbox span::before {
+    display: none;
+}
+
+/* edit field  */
+
+.modal-wrap {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+}

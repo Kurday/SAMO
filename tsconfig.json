@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "plugins": [
+            {
+                "name": "typescript-plugin-css-modules"
+            }
+        ],
+        "noEmit": true,
+        "allowJs": true,
+        "baseUrl": "src",
+        "module": "esnext",
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "jsx": "react-jsx",
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "isolatedModules": true,
+        "target": "es5",
+        "allowSyntheticDefaultImports": true,
+        "noFallthroughCasesInSwitch": true,
+        "resolveJsonModule": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}

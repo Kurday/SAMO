@@ -1,0 +1,99 @@
+.block {
+    margin: 20px;
+    border-radius: 15px;
+    background: #ffffff;
+    padding: 35px;
+    font-size: 16px;
+    z-index: 0;
+}
+
+.content {
+    margin-top: 40px;
+    display: grid;
+    grid-template-rows: 320px 320px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.block__rituals {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    @extend.block;
+}
+
+.block__habit {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    @extend.block;
+}
+
+.block__todo {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    @extend.block;
+}
+
+.block__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+    color: #25315b;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.slider-title {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+.slider-content {
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+}
+
+.create {
+    cursor: pointer;
+}
+
+@media (max-width: 380px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 420px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-size: 20px !important;
+    }
+    .block__title {
+        font-size: 23px !important;
+    }
+}
+
+@media (max-width: 1050px) {
+    .content {
+        font-size: 30px;
+    }
+}

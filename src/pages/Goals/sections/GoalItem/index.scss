@@ -1,0 +1,43 @@
+.goal__item {
+    border-radius: 0 0 15px 15px;
+    padding: 16px;
+    cursor: pointer;
+    background: var(--sphereGoalItem-bg);
+    border-top: 4px solid var(--sphereGoalItem-color);
+    margin-bottom: 20px;
+    & .goal__item-content {
+        margin-bottom: 16px;
+        display: flex;
+        position: relative;
+        & svg {
+            position: absolute;
+            right: 0;
+            top: 6px;
+        }
+    }
+    & .goal__item-date {
+        max-width: 87px;
+        display: flex;
+        background: #fff;
+        padding: 7px;
+        margin-bottom: 16px;
+        & svg {
+            margin-right: 11px;
+        }
+    }
+    & .goal__item-image {
+        & img {
+            border-radius: 5px;
+            max-width: 232px;
+            object-fit: cover;
+        }
+    }
+    &.doneGoal {
+        position: relative;
+        & .goal__item-done-icon {
+            position: absolute;
+            right: 16px;
+            bottom: 26px;
+        }
+    }
+}

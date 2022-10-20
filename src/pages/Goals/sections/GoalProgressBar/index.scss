@@ -1,0 +1,9 @@
+.doneGoalProgress {
+    max-width: 123px;
+    max-height: 123px;
+    margin: 0 auto;
+    & .CircularProgressbar-text {
+        font-weight: bold;
+        fill: #25315b !important;
+    }
+}

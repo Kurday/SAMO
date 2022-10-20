@@ -1,0 +1,61 @@
+.sider__item {
+    display: flex;
+    height: 24px;
+    align-content: space-between;
+    align-items: center;
+    list-style: none;
+    white-space: nowrap;
+    padding: 30px 0px 30px 40px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    & svg {
+        margin-right: 20px;
+        overflow: visible;
+    }
+    & span {
+        font-size: 18px;
+        display: block;
+        max-width: 125px;
+    }
+    &:nth-last-child(2) {
+        margin-bottom: 108px;
+        white-space: break-spaces;
+    }
+}
+
+.logout.btn {
+    border-radius: 8px;
+    padding: 8px 66px 15px;
+    border: 1px solid #212529;
+}
+
+.sider__closebtn {
+    font-size: 18px;
+    padding: 30px 0px 30px 40px;
+    white-space: nowrap;
+    & svg {
+        transform: rotate(-180deg);
+        margin-right: 20px;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.sidenav.active {
+    & .sider__closebtn {
+        svg {
+            transform: rotate(0deg);
+        }
+    }
+    & .logo_h {
+        opacity: 0;
+    }
+}
+
+.activeRoute {
+    border-right: 3px solid #3175d6;
+    background: #f5f6fa;
+}
+
+.logo_h {
+    transition: 0.3s ease-in-out;
+}

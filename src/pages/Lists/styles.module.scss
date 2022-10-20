@@ -1,0 +1,12 @@
+.main {
+    grid-area: main;
+    padding: 40px;
+}
+
+.content {
+    height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 262px;
+    gap: 20px;
+}

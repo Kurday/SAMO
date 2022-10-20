@@ -1,0 +1,14 @@
+@mixin scrollbarMedium($selector) {
+    #{$selector}::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    #{$selector}::-webkit-scrollbar-thumb {
+        background-color: #bec3cd;
+        border-radius: 10px;
+    }
+    #{$selector}::-webkit-scrollbar-track-piece {
+        background: rgba(9, 30, 66, 0.08);
+        border-radius: 10px;
+    }
+}

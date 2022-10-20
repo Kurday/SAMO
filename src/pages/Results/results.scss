@@ -1,0 +1,6 @@
+.results-page {
+    display: grid;
+    & .block {
+        z-index: auto;
+    }
+}

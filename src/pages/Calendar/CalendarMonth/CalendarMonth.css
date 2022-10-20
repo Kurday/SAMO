@@ -1,0 +1,157 @@
+.calendarMonth {
+    border-radius: 5px;
+}
+
+.calendarMonthWeek {
+    display: flex;
+    grid-gap: 1px;
+}
+
+.calendar .day {
+    position: absolute;
+    width: calc(100% / 7);
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 1;
+    text-align: right;
+}
+
+.day {
+    min-height: 115px;
+    min-width: 155px;
+    font-size: 14px;
+    font-family: 'Lato';
+    background: white;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-radius: 5px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.selected > * {
+    background: black;
+}
+
+.current {
+    background: orange;
+    color: green;
+}
+
+.weekEndDay,
+.weekEndData {
+    background: darkgray;
+    border-radius: none;
+}
+
+.calendarMonthDayHeader {
+    display: flex;
+    font-size: 16px;
+    width: 100%;
+}
+
+.calendarMonthDayHeader div {
+    margin-top: 9px;
+    margin-bottom: 8px;
+    width: 155px;
+    text-align: center;
+}
+
+.calendarDate {
+    font-weight: bold;
+    font-size: 22px;
+}
+.calendarDates {
+    text-transform: capitalize;
+}
+
+.today {
+    color: yellow;
+    background: green;
+    overflow: hidden;
+    border-radius: inherit;
+    padding: 0 5px 2px 5px;
+}
+
+.cover {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(10, 10, 10, 0.1);
+    border-radius: 0;
+}
+
+.finances {
+    width: 100%;
+    background: rgba(129, 255, 179, 0.08);
+    border-right: 5.7px solid rgb(129, 255, 179);
+    text-align: center;
+}
+
+.friends {
+    width: 100%;
+    background: rgba(254, 109, 109, 0.08);
+    border-right: 5.7px solid rgb(254, 109, 109);
+    text-align: center;
+}
+
+.life {
+    width: 100%;
+    background: rgba(105, 228, 255, 0.08);
+    border-right: 5.7px solid rgb(105, 228, 255);
+    text-align: center;
+}
+
+.family {
+    width: 100%;
+    background: rgba(185, 126, 255, 0.08);
+    border-right: 5.7px solid rgb(185, 126, 255);
+    text-align: center;
+}
+
+.personal {
+    width: 100%;
+    background: rgba(251, 246, 129, 0.08);
+    border-right: 5.7px solid rgb(251, 246, 129);
+    text-align: center;
+}
+
+.business {
+    width: 100%;
+    background: rgba(100, 189, 255, 0.08);
+    border-right: 5.7px solid rgb(100, 189, 255);
+    text-align: center;
+}
+
+.health {
+    width: 100%;
+    background: rgba(255, 168, 118, 0.08);
+    border-right: 5.7px solid rgb(255, 168, 118);
+    text-align: center;
+}
+
+.calendarMonth .charity,
+.calendarDay .charity,
+.calendarWeek .charity {
+    width: 100%;
+    background: rgba(255, 113, 216, 0.08);
+    border-right: 5.7px solid rgb(255, 113, 216);
+    text-align: center;
+}
+
+.number {
+    margin-left: 10%;
+    margin-top: 4%;
+    font-family: 'Lato';
+}
+
+.calendarMonthDates {
+    display: flex;
+    margin-left: 25px;
+    font-size: 22px;
+    font-weight: bold;
+}

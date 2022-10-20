@@ -1,0 +1,99 @@
+.calendarWeek {
+    position: relative;
+    border-radius: 5px;
+    left: 77px;
+    height: 100%;
+}
+
+.calendarWeekDay {
+    display: flex;
+    grid-gap: 1px;
+    background-color: white;
+}
+
+.calendarMonthDayHeader {
+    display: grid;
+    gap: 1px;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 155px);
+    padding-top: 9px;
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+
+.dayWeek {
+    min-height: 762px;
+    width: 155px;
+    font-size: 14px;
+    font-family: 'Lato';
+    background: white;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+}
+
+.selectedWeek > * {
+    background: black;
+    color: red;
+}
+
+.currentWeek {
+    background: orange;
+    color: green;
+}
+
+.weekEndWeek {
+    background: darkgray;
+    color: orangered;
+}
+
+.calendarWeekDayHeader {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 20px;
+    height: 20px;
+    width: 100%;
+    top: -30px;
+}
+
+.dataWeek {
+    width: 100%;
+    background: #81ffb3;
+    font-size: 10px;
+    text-align: left;
+}
+
+.digit {
+    margin-left: 5%;
+    margin-top: 3%;
+    font-family: 'Lato';
+}
+
+.calendarDayTimeBlockWeek {
+    position: absolute;
+    right: 100%;
+    top: 65px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.calendarDayTimeBlockWeek span {
+    margin-top: 8px;
+}
+
+.calendarWeekDates {
+    display: flex;
+    margin-left: 25px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.calendarDates {
+    font-weight: bold;
+}

@@ -1,0 +1,78 @@
+.modal__wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal__wrapper.open {
+    height: 100%;
+    display: block;
+}
+
+.modal__wrapper.close {
+    height: 0;
+    display: none;
+}
+
+.modal__body {
+    max-width: 400px;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    max-height: 100%;
+    padding: 27px;
+    margin-top: 10%;
+}
+
+.modal__close {
+    text-align: right;
+    cursor: pointer;
+}
+
+.textarea {
+    resize: none;
+    background: #f6f5fa;
+    border: 1.5px solid #3175d6;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.ritual {
+    background-color: #777777;
+}
+
+.add-contaner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.add-task {
+    width: 200px;
+    height: 30px;
+    background: #f6f5fa;
+    border-radius: 5px;
+    border: none;
+}
+
+.add-focus {
+    width: 80%;
+    height: 160px;
+    background: #f6f5fa;
+    border-radius: 5px;
+    border: none;
+    margin: auto;
+}
+
+.modal__button {
+    background: #3175d6;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 12px 18px;
+    margin-left: 60%;
+    cursor: pointer;
+    border: none;
+}
